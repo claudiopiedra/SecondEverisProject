@@ -30,7 +30,7 @@ public class ClassRestController {
 	}
 	
 	@PostMapping("/post")
-	public Classes insertClasses(@RequestBody Classes classes){
+	public Classes insertClasses(@Valid @RequestBody Classes classes){
 		return classService.saveClasses(classes);
 	}
 		
@@ -39,7 +39,7 @@ public class ClassRestController {
 			return classService.updateClasses(classes);
 	}
 		
-	@DeleteMapping("/deleteClass/{classid}")
+	@DeleteMapping("/delete/{classid}")
 	public void deleteClasses(@PathVariable(name= "classid") Integer classid) {
 		classService.deleteClasses(classid);
 	}

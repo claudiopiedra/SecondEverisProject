@@ -24,22 +24,22 @@ public class SubjectRestController {
 	@Autowired
 	private SubjectService subjectService;
 	
-	@GetMapping(value= "getSubject")
+	@GetMapping("/get")
 	public List<Subject> getSubject(){
 		return subjectService.findAll();
 	}
 	
-	@PostMapping(value="postSubject")
+	@PostMapping("post")
 	public Subject insertSubject(@Valid @RequestBody Subject subject){
 		return subjectService.saveSubject(subject);
 	}
 		
-	@PutMapping(value= "putSubject")
+	@PutMapping("put")
 	public Subject updateSubject(@Valid @RequestBody Subject subject){
 			return subjectService.updateSubject(subject);
 	}
 		
-	@DeleteMapping("/deleteSubject/{subjectid}")
+	@DeleteMapping("/delete/{subjectid}")
 	public void deleteSubject(@PathVariable(name= "subjectid") Integer subjectid) {
 		subjectService.deleteSubject(subjectid);
 	}

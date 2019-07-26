@@ -22,22 +22,22 @@ public class StudentClassRestController {
 	@Autowired
 	private StudentClassService studentClassService;
 	
-	@GetMapping("/getStudentClass")
+	@GetMapping("/get")
 	public List<StudentClass> getStudentClass(){
 		return studentClassService.findAll();
 	}
 	
-	@PostMapping("/postStudentClass")
+	@PostMapping("/post")
 	public StudentClass insertStudentClass(@RequestBody StudentClass studentclass){
 		return studentClassService.saveStudentClass(studentclass);
 	}
 		
-	@PutMapping("/putStudentClass")
+	@PutMapping("/put")
 	public StudentClass updateStudentClass(@RequestBody StudentClass studentclass){
 			return studentClassService.updateStudentClass(studentclass);
 	}
 		
-	@DeleteMapping("/deleteStudentClass/{studentid}")
+	@DeleteMapping("/delete/{studentid}")
 	public void deleteStudentClass(@PathVariable(name= "studentid") Integer studentid) {
 		studentClassService.deleteStudentClass(studentid);
 	}

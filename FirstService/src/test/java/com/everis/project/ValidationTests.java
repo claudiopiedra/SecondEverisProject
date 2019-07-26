@@ -9,10 +9,10 @@ import javax.validation.ValidatorFactory;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 import com.everis.project.model.Classes;
 
@@ -20,13 +20,14 @@ import com.everis.project.model.Classes;
 @SpringBootTest
 public class ValidationTests {
 
-	
+	@InjectMocks
+	Classes classes;
 	
 	@Test
 	public void testClassValidations() {
-	Classes classes = new Classes();
+//	Classes classes = new Classes();
 		classes.setClassid(1);
-		classes.setClasscode(null);
+		classes.setClasscode("CC01");
 		classes.setClassname("Matematica I");
 		classes.setDatefrom(null);
 		classes.setDateto(null);
@@ -39,6 +40,11 @@ public class ValidationTests {
 		vs.forEach((v) -> {
 			System.out.print("-->" + v.getPropertyPath()+ ":" + v.getMessage());
 		});
+		
+	}
+	
+	@Test
+	public void testClassValidations2() {
 		
 	}
 	

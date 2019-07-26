@@ -23,7 +23,6 @@ public class ClassRepositoryTest {
 	@Test
 	public void testClassRepository1() {
 		List<Classes> classes = classRepository.findAll();
-		
 		assertThat(classes.size()).isEqualTo(1);
 	}
 

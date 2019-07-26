@@ -25,22 +25,22 @@ public class TeacherRestController {
 	@Autowired
 	private TeacherService teacherService;
 	
-	@GetMapping(value= "getTeacher")
+	@GetMapping("get")
 	public List<Teacher> getTeacher(Model model){
 		return teacherService.findAll();	 
 	}
 	
-	@PostMapping(value="postTeacher")
+	@PostMapping("post")
 	public Teacher insertTeacher(@Valid @RequestBody Teacher teacher){
 		return teacherService.saveTeacher(teacher);
 	}
 		
-	@PutMapping(value= "putTeacher")
+	@PutMapping("put")
 	public Teacher updateTeacher(@Valid @RequestBody Teacher teacher){
 			return teacherService.updateTeacher(teacher);
 	}
 		
-	@DeleteMapping("/deleteTeacher/{teacherid}")
+	@DeleteMapping("/delete/{teacherid}")
 	public void deleteTeacher(@PathVariable(name= "teacherid") Integer teacherid) {
 		teacherService.deleteTeacher(teacherid);
 	}
