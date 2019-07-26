@@ -1,0 +1,3 @@
+spring.application.name=second-service
+spring.config.name=second-name
+server.port=8002

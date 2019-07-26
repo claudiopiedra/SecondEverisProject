@@ -41,4 +41,5 @@ public class StudentClassRestController {
 	public void deleteStudentClass(@PathVariable(name= "studentid") Integer studentid) {
 		studentClassService.deleteStudentClass(studentid);
 	}
+	
 }
