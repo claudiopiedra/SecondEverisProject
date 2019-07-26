@@ -1,0 +1,39 @@
+package com.everis.project.model;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+@Entity
+@Table(name="teacher")
+public class Teacher {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int teacherid;
+	
+	private int schoolid;
+	
+	@NotNull(message = "Enter a male or female gender")
+	@Size(min=1, max=6)
+	private String gender;
+	
+	@NotNull(message = "Enter firstname")
+	@Size(min=1, max=6)
+	private String firstname;
+	
+	@NotNull(message = "Enter middle name")
+	@Size(min=1, max=6)
+	private String middlename;
+	
+	@NotNull(message = "Enter last name")
+	@Size(min=1, max=6)
+	private String lastname;
+	
+	@NotNull(message = "Enter ")
+	@Size(min=1, max=6)
+	private String otherteacherdetails;
+	
+	
+	
+}

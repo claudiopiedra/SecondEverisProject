@@ -1,0 +1,23 @@
+server:
+  port: 8762
+  
+spring:
+  application:
+    name: zuul-server
+ 
+ 
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: 
+  client:
+        registerWithEureka: false
+        fetchRegistry: false
+#        serviceUrl:
+#          defaultZone:     
+          
+          
+          
+    
+
+

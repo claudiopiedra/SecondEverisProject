@@ -1,0 +1,7 @@
+package com.everis.project.service;
+
+@Service
+public class StudentClassServiceFeign implements StudentClassService{
+
+	
+}

@@ -1,0 +1,46 @@
+package com.everis.project.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.everis.project.model.StudentClass;
+import com.everis.project.rest.ClassStudentRest;
+
+public class StudentClassServiceFeign implements StudentClassService{
+
+	@Autowired
+	private ClassStudentRest classStudentRest;
+	
+	@Override
+	public List<StudentClass> findAll() {
+		return classStudentRest.listStudent().stream().map(p -> new StudentClass(p, 1)).collect(Collectors.toList());
+	}
+
+	@Override
+	public StudentClass saveStudentClass(StudentClass studentclass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public StudentClass updateStudentClass(StudentClass studentclass) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public StudentClass findByStudentid(int studentid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteStudentClass(int studentid) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

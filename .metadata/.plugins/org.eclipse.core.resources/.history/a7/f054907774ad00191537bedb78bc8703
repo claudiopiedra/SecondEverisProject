@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link th:href="@{css/bootstrap.css}" rel="stylesheet" href="../static/css/bootstrap.css"/>
+	<script th:src="@{/js/jquery.js}" src="../static/js/jquery.js"></script>
+	<script th:src="@{/js/bootstrap.js}" src="../static/js/bootstrap.js"></script>
+	<title>Everis Project</title>
+	<ul class="nav justify-content-end">
+  		<li class="nav-item">
+   		 <a class="nav-link active" href="#">Class</a>
+ 		 </li>
+ 		 <li class="nav-item">
+  		  <a class="nav-link" href="#">Subject</a>
+  		</li>
+  		<li class="nav-item">
+	    <a class="nav-link" href="#">Teacher</a>
+	 	 </li>
+	 	 <li class="nav-item">
+	    <a class="nav-link" href="#">Student Class</a>
+	 	 </li>	
+</ul>
+</head>
+<body>
+	 <div class="container my-5">
+        <h3> Add Student</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
+                    <form action="#" th:action="@{/students/add}" th:object="${student}" method="post">
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label for="name" class="col-form-label">Name</label> <input type="text" th:field="*{name}" class="form-control" id="name" placeholder="Name"> <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="email" class="col-form-label">Email</label> <input type="text" th:field="*{email}" class="form-control" id="email" placeholder="Email"> <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group col-md-8">
+                                <label for="phoneNo" class="col-form-label">Phone No</label> <input type="text" th:field="*{phoneNo}" class="form-control" id="phoneNo" placeholder="PhoneNo"> <span th:if="${#fields.hasErrors('phoneNo')}" th:errors="*{phoneNo}" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="submit" class="btn btn-primary" value="Add Student">
+                            </div>
+
+                            <div class="form-group col-md-8"></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

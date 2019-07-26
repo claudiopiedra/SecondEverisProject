@@ -1,0 +1,8 @@
+package com.everis.project.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ClassRepository {
+
+}

@@ -1,0 +1,8 @@
+package com.everis.project.swagger;
+
+import org.springframework.context.annotation.Configuration;
+
+
+public class SwaggerConfig {
+
+}

@@ -1,0 +1,8 @@
+package com.everis.project.rest;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="second-service")
+public interface ClassStudentRest {
+
+}

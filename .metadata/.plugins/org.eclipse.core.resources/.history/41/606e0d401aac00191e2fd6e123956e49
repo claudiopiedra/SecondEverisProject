@@ -1,0 +1,9 @@
+package com.everis.project.model;
+
+import javax.persistence.*;
+
+@Entity
+@
+public class Teacher {
+
+}

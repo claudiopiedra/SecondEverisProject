@@ -1,0 +1,44 @@
+package com.everis.project.rest;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.everis.project.model.Classes;
+import com.everis.project.service.ClassService;
+
+@RestController
+@RequestMapping(value="class")
+public class ClassRestController {
+
+	@Autowired
+	private ClassService classService;
+	
+	@GetMapping(value= "getClass")
+	public List<Classes> getClasses(){
+		return classService.findAll();
+	}
+	
+	@PostMapping(value="postTeacher")
+	public Classes insertClasses(@RequestBody Classes teacher){
+		return classService.saveClasses(teacher);
+	}
+		
+	@PutMapping(value= "putTeacher")
+	public Classes updateClasses(@RequestBody Classes teacher){
+			return classService.updateClasses(teacher);
+	}
+		
+	@DeleteMapping("/deleteTeacher/{teacherid}")
+	public void deleteClasses(@PathVariable(name= "teacherid") Integer teacherid) {
+		classService.deleteClasses(teacherid);
+	}
+}

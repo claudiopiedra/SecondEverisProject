@@ -1,0 +1,5 @@
+package com.everis.project.repository;
+
+public interface SubjectRepository {
+
+}

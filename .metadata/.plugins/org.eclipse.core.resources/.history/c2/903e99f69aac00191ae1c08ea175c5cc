@@ -1,0 +1,9 @@
+package com.everis.project.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.everis.project.model.StudentClass;
+
+public interface StudentService {
+
+}

@@ -1,0 +1,24 @@
+package com.everis.project;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.everis.project.model.Classes;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class ValidationTests {
+
+	@Autowired
+	private Classes classes;
+	
+	@Test
+	public void testClassValidations() {
+		
+	}
+
+	
+}

@@ -1,0 +1,49 @@
+package com.everis.project.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.everis.project.model.Subject;
+import com.everis.project.repository.SubjectRepository;
+
+@Service
+public class SubjectServiceImpl implements SubjectService{
+
+	@Autowired
+	private SubjectRepository subjectRepository;
+
+	@Override
+	public List<Subject> findAll() {
+		// TODO Auto-generated method stub
+		return subjectRepository.findAll();
+	}
+
+	@Override
+	public Subject saveSubject(Subject subject) {
+		// TODO Auto-generated method stub
+		return subjectRepository.save(subject);
+	}
+
+	@Override
+	public Subject updateSubject(Subject subject) {
+		// TODO Auto-generated method stub
+		return subjectRepository.saveAndFlush(subject);
+	}
+
+	@Override
+	public Subject findBySubjectid(int subjectid) {
+		// TODO Auto-generated method stub
+		return subjectRepository.findById(subjectid).get();
+	}
+
+	@Override
+	public void deleteSubject(int subjectid) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

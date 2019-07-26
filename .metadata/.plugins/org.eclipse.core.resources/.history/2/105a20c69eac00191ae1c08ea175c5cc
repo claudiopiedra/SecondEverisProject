@@ -1,0 +1,7 @@
+package com.everis.project.service;
+
+public interface SubjectService {
+	
+	
+
+}

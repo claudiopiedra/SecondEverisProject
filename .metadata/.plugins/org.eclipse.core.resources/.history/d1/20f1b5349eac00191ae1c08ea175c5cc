@@ -1,0 +1,20 @@
+package com.everis.project.service;
+
+import java.util.List;
+
+import com.everis.project.model.Classes;
+
+
+public interface ClassService {
+	
+	public List<Classes> findAll();
+	
+	public Classes saveClasses(Classes classes);
+			
+	public Classes updateClasses(Classes classes);
+	
+	public Classes findByClassid(int classid);
+		
+	public void deleteStudentClass(int studentid);
+
+}

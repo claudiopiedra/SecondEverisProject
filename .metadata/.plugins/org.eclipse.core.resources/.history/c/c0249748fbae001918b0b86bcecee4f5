@@ -1,0 +1,46 @@
+package com.everis.project.model;
+
+import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="studentclass")
+public class StudentClass {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int studentid;
+	
+//	Relations
+	
+	private String studentname;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("studentReference")
+	@JoinColumn(name= "studentReference")
+	private Classes classesReference;
+	
+
+	public int getStudentid() {
+		return studentid;
+	}
+
+	public void setStudentid(int studentid) {
+		this.studentid = studentid;
+	}
+
+	public Classes getClassesReference() {
+		return classesReference;
+	}
+
+	public void setClassesReference(Classes classesReference) {
+		this.classesReference = classesReference;
+	}
+	
+	
+	
+}

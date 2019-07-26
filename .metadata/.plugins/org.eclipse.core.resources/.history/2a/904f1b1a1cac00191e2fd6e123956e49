@@ -1,0 +1,14 @@
+package com.everis.project.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="subject")
+public class Subject {
+
+	private int subjectid;
+	
+	private String subjectname;
+	
+	
+}

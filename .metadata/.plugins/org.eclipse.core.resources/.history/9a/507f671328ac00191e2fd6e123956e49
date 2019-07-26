@@ -1,0 +1,16 @@
+package com.everis.project.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="class")
+public class Class {
+
+	private int classid;
+	
+	private String classcode;
+	
+	private String classname;
+	
+	
+}

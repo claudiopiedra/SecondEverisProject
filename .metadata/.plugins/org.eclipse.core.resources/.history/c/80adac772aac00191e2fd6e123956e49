@@ -1,0 +1,17 @@
+package com.everis.project.service;
+
+import java.util.List;
+import com.everis.project.model.Teacher;
+
+public interface TeacherService {
+
+public List<Teacher> findAll();
+	
+	public Teacher saveFamilies(Teacher families);
+			
+	public Teacher updateFamilies(Teacher families);
+	
+	public Teacher findByFamilyid(int familyid);
+		
+	public void deleteTeacher(int familyid);
+}

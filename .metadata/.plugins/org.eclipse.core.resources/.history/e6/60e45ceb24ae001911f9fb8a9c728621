@@ -1,0 +1,54 @@
+package com.everis.project.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.everis.project.model.Classes;
+import com.everis.project.repository.ClassRepository;
+import com.everis.project.repository.StudentClassRepository;
+
+@Service
+public class ClassServiceImpl implements ClassService {
+	
+	@Autowired
+	private ClassRepository classrepository;
+	
+	@Autowired
+	private StudentClassRepository studentClassRepository;
+	
+	@Override
+	public List<Classes> findAll() {
+		return classrepository.findAll();
+	}
+
+	@Override
+	public Classes saveClasses(Classes classes) {
+		Classes room = classrepository.save(classes);
+		
+		
+		classes.getStudentRefrence()
+		    .forEach(classStudent -> classStudent.setClassRoomReference(classRoom));
+			
+		classStudentRoomDao.saveAll(classRoom.getStudentRefrence());
+		return room;
+	}
+
+	@Override
+	public Classes updateClasses(Classes classes) {
+		return classrepository.saveAndFlush(classes);
+	}
+
+	@Override
+	public Classes findByClassid(int classid) {
+		return classrepository.findById(classid).get();
+	}
+
+	@Override
+	public void deleteClasses(int classid) {
+		classrepository.deleteById(classid);
+	}
+
+	
+}

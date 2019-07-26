@@ -1,0 +1,14 @@
+spring.application.name= first-service
+server.port=8001
+
+spring.datasource.platform=postgresql
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost/dbeveris
+spring.datasource.username=postgres
+spring.datasource.password=123
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+
+
+eureka.client.eureka-server-u-r-l-context=

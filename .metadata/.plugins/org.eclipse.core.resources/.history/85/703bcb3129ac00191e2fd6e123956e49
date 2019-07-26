@@ -1,0 +1,13 @@
+package com.everis.project.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="studentclass")
+public class StudentClass {
+
+	private int studentid;
+	
+	
+}

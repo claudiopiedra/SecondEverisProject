@@ -1,0 +1,6 @@
+package com.everis.project.service;
+
+@Service
+public class ClassServiceImpl implements ClassService {
+
+}

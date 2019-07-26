@@ -1,0 +1,27 @@
+package com.everis.project.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="teacher")
+public class Teacher {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int teacherid;
+	
+	private int schoolid;
+	
+	private String gender;
+	
+	private String firstname;
+	
+	private String middlename;
+	
+	private String lastname;
+	
+	private String otherteacherdetails;
+	
+	
+	
+}
