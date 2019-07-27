@@ -10,6 +10,7 @@ import lombok.Data;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+//Use of lombok
 @Data
 @Entity
 @Table(name="classes")
@@ -29,9 +30,11 @@ public class Classes {
 	@Column(name="classname")
 	private String classname;
 	
+	@NotNull(message = "Enter date from")
 	@Column(name="datefrom")
 	private Date datefrom;
 	
+	@NotNull(message = "Enter date to")
 	@Column(name="dateto")
 	private Date dateto;
 	
@@ -42,5 +45,9 @@ public class Classes {
 	@JsonIgnoreProperties("classesReference")
 	private List<StudentClass> studentReference;
 	
+	@OneToOne(cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("classesforsubject")
+	@JoinColumn(name= "classesforsubject")
+	private Subject subjectreference;
 	
 }

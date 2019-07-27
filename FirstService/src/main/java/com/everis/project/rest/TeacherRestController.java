@@ -25,17 +25,17 @@ public class TeacherRestController {
 	@Autowired
 	private TeacherService teacherService;
 	
-	@GetMapping("get")
+	@GetMapping("/get")
 	public List<Teacher> getTeacher(Model model){
 		return teacherService.findAll();	 
 	}
 	
-	@PostMapping("post")
+	@PostMapping("/post")
 	public Teacher insertTeacher(@Valid @RequestBody Teacher teacher){
 		return teacherService.saveTeacher(teacher);
 	}
 		
-	@PutMapping("put")
+	@PutMapping("/put")
 	public Teacher updateTeacher(@Valid @RequestBody Teacher teacher){
 			return teacherService.updateTeacher(teacher);
 	}

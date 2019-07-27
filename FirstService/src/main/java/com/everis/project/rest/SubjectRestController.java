@@ -29,12 +29,12 @@ public class SubjectRestController {
 		return subjectService.findAll();
 	}
 	
-	@PostMapping("post")
+	@PostMapping("/post")
 	public Subject insertSubject(@Valid @RequestBody Subject subject){
 		return subjectService.saveSubject(subject);
 	}
 		
-	@PutMapping("put")
+	@PutMapping("/put")
 	public Subject updateSubject(@Valid @RequestBody Subject subject){
 			return subjectService.updateSubject(subject);
 	}

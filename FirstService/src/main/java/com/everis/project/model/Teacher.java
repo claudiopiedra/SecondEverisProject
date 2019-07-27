@@ -4,6 +4,10 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import lombok.Data;
+
+//Use of lombok
+@Data
 @Entity
 @Table(name="teacher")
 public class Teacher {
@@ -12,8 +16,9 @@ public class Teacher {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int teacherid;
 
-	@NotNull(message = "Enter a Schoold id")
-	private int schoolid;
+	@NotNull(message = "Enter a Schoold Id")
+	@Size(min=1, max=4, message = "The school id must be greater than one character and less than or equal to 6 characters.")
+	private String schoolid;
 	
 	@NotNull(message = "Enter a male or female gender")
 	@Size(min=1, max=6, message = "The gender must be greater than one character and less than or equal to 6 characters.")
