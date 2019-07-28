@@ -84,6 +84,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<scope>compile</scope> <!-- compile: SI se incluye en el package -->
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>

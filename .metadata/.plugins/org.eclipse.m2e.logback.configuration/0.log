@@ -8034,3 +8034,171 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-07-26 21:21:30,135 [Worker-108: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
 2019-07-26 21:21:30,143 [Worker-108: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-26 21:21:30,143 [Worker-108: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 15:54:30,614 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-07-27 15:54:47,951 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:Zuul:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\Zuul\pom.xml.
+2019-07-27 15:54:53,325 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:SecondService:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\pom.xml.
+2019-07-27 15:54:55,464 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:FirstService:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\pom.xml.
+2019-07-27 15:54:57,319 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.project:EurekaServer:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\EurekaServer\pom.xml.
+2019-07-27 15:55:11,000 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:11,006 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 15:55:11,026 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 15:55:11,029 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:11,029 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\EurekaServer\src\test\resources
+2019-07-27 15:55:20,570 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:20,571 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 15:55:20,580 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 15:55:20,583 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:20,583 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 15:55:21,522 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:21,538 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 15:55:21,547 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 15:55:21,549 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:21,549 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 15:55:22,318 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:22,318 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 15:55:22,320 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 15:55:22,329 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 15:55:22,330 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\Zuul\src\test\resources
+2019-07-27 16:04:29,614 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:04:29,623 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:04:29,635 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:04:29,640 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:04:29,640 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:47:49,118 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:47:49,127 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:47:49,156 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:47:49,164 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:47:49,167 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:48:02,471 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:48:02,480 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:48:02,490 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:48:02,498 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:48:02,498 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:51:16,694 [Worker-33: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:FirstService:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\pom.xml.
+2019-07-27 16:51:17,827 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:51:17,827 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 16:51:17,827 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 16:51:17,831 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:51:17,831 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:51:21,738 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:51:21,741 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:51:21,749 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:51:23,851 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:51:23,853 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:54:12,706 [Worker-33: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:FirstService:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\pom.xml.
+2019-07-27 16:54:13,661 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:54:13,663 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 16:54:13,663 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 16:54:13,671 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:54:13,673 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:54:57,383 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:54:57,388 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:54:57,388 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:54:57,404 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:54:57,407 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:58:59,318 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:58:59,325 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:58:59,351 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:58:59,366 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:58:59,367 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:59:06,662 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:59:06,686 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:59:06,697 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:59:06,714 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:59:06,715 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 16:59:58,360 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:59:58,361 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 16:59:58,361 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 16:59:58,376 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 16:59:58,376 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 17:00:47,767 [Worker-34: Launching FirstService - FirstServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:00:47,772 [Worker-34: Launching FirstService - FirstServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 17:00:47,772 [Worker-34: Launching FirstService - FirstServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 17:00:47,772 [Worker-34: Launching FirstService - FirstServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:00:47,772 [Worker-34: Launching FirstService - FirstServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 17:01:40,871 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:01:40,875 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 17:01:40,887 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 17:01:40,903 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:01:40,909 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 17:01:56,442 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:01:56,453 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 17:01:56,477 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 17:01:56,497 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:01:56,497 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 17:03:49,445 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:03:49,453 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 17:03:49,464 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 17:03:49,468 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 17:03:49,488 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 22:37:21,516 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-07-27 22:39:43,553 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:39:43,578 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:39:43,600 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 22:39:44,476 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:39:44,477 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 22:41:10,401 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:41:10,407 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:41:10,415 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 22:41:10,419 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:41:10,419 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 22:46:19,569 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:46:19,569 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:46:19,584 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:46:19,584 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:46:19,584 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:47:26,991 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:47:27,007 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:47:27,007 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 22:47:27,007 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:47:27,023 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 22:48:09,029 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:48:09,029 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:48:09,045 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 25 resources
+2019-07-27 22:48:09,060 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:48:09,060 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\FirstService\src\test\resources
+2019-07-27 22:49:22,297 [Worker-4: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:SecondService:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\pom.xml.
+2019-07-27 22:49:23,553 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:49:23,568 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:49:23,568 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:49:23,568 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:49:23,568 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:49:26,523 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:49:26,523 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:49:26,523 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:49:26,523 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:49:26,523 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:50:23,785 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.everis:SecondService:0.0.1-SNAPSHOT @ C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\pom.xml.
+2019-07-27 22:50:24,488 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:50:24,488 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:50:24,488 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:50:24,488 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:50:24,488 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:50:26,973 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:50:26,973 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:50:26,973 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:50:26,989 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:50:26,989 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:50:53,543 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:50:53,543 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:50:53,543 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:50:53,543 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:50:53,543 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:51:24,754 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:51:24,756 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:51:24,758 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:51:24,763 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:51:24,763 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 22:53:32,142 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:53:32,142 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 22:53:32,150 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 22:53:32,156 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 22:53:32,163 [Worker-7: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 23:06:08,859 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 23:06:08,859 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 23:06:08,859 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-27 23:06:08,874 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 23:06:08,874 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Claud\OneDrive\Documentos\EverisProject\SecondService\src\test\resources
+2019-07-27 23:06:51,832 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-27 23:06:51,832 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-27 23:06:51,832 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SecondService"/>
-<aop-project name="EverisProject"/>
 <aop-project name="FirstService"/>
 <aop-project name="Zuul"/>
 <aop-project name="EurekaServer"/>

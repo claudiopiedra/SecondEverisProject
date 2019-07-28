@@ -1,9 +1,0 @@
-package com.everis.project.model;
-
-import javax.persistence.*;
-
-@Entity
-@Table(name="teacher")
-public class Teacher {
-
-}
