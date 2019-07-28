@@ -6,11 +6,9 @@ server.port=8090
 #Eureka properties
 eureka.client.service-url.defaultZone: http://localhost:8761/eureka/
 
-#first service route
 zuul.routes.first.service-id=first-service
 zuul.routes.first.path=/firstservice/**
 
-#second service route
 zuul.routes.second.service-id=second-service
 zuul.routes.second.path=/secondservice/**
 

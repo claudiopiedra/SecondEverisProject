@@ -1,4 +1,3 @@
-#service properties
 spring.application.name=first-service
 spring.config.name=first-name
 server.port=8001
