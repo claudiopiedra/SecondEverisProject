@@ -1,0 +1,61 @@
+package com.everis.project.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.everis.project.model.Subject;
+import com.everis.project.repository.ClassRepository;
+import com.everis.project.repository.StudentClassRepository;
+import com.everis.project.repository.SubjectRepository;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class SubjectServiceImpl implements SubjectService{
+
+	@Autowired
+	private SubjectRepository subjectRepository;
+	
+	private ClassRepository classRepository;
+
+	@Override
+	public List<Subject> findAll() {
+		return subjectRepository.findAll();
+	}
+
+	@Override
+	public Subject saveSubject(Subject subject) {
+		
+		Subject sub = subjectRepository.save(subject);
+		
+		subject.getClassesforsubject()
+		
+//		classes.getStudentReference().forEach(studentclass -> studentclass.setClassesReference(classes));
+//		studentClassRepository.saveAll(classes.getStudentReference());
+//				
+//		return room;
+		
+		return sub;
+	}
+
+	@Override
+	public Subject updateSubject(Subject subject) {
+		return subjectRepository.saveAndFlush(subject);
+	}
+
+	@Override
+	public Subject findBySubjectid(int subjectid) {
+		return subjectRepository.findById(subjectid).get();
+	}
+
+	@Override
+	public void deleteSubject(int subjectid) {
+		subjectRepository.deleteById(subjectid);
+	}
+	
+	
+
+}

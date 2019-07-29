@@ -7,11 +7,13 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.Data;
+import lombok.Setter;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //Use of lombok
 @Data
+@Setter
 @Entity
 @Table(name="classes")
 public class Classes {
@@ -32,21 +34,23 @@ public class Classes {
 	
 	@NotNull(message = "Enter date from")
 	@Column(name="datefrom")
+	@Temporal(TemporalType.DATE)
 	private Date datefrom;
 	
 	@NotNull(message = "Enter date to")
 	@Column(name="dateto")
+	@Temporal(TemporalType.DATE)
 	private Date dateto;
 	
 //	Relations
 	
 	
-	@OneToMany(mappedBy = "classesReference", fetch = FetchType.LAZY)
-	@JsonIgnoreProperties("classesReference")
-	private List<StudentClass> studentReference;
+//	@OneToMany(mappedBy = "classesReference", fetch = FetchType.LAZY)
+//	@JsonIgnoreProperties("classesReference")
+//	private List<StudentClass> studentReference;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("classesforsubject")
+//	@JsonIgnoreProperties("classesforsubject")
 	@JoinColumn(name= "classesforsubject")
 	private Subject subjectreference;
 	

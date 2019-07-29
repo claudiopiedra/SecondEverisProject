@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+	<property name="logPattern" value="%-4relative [%thread] %-5level %logger{35} - %msg%n"/>
+<property name="logEncoding" value="UTF-8"/>
+<property name="logDirectory" value="/var/log/myapp"/>
+<property name="file_base_name" value="app"/>
+<property name="archive" value="archive"/>
+<timestamp key="current_date" datePattern="yyyy-MM-dd"/>
+<appender name="fileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+<file>${logDirectory}/${file_base_name}.log</file>
+<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+<fileNamePattern>
+${logDirectory}/${archive}/${file_base_name}_%d{yyyy-MM-dd}.%i.log
+</fileNamePattern>
+<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+<maxFileSize>30MB</maxFileSize>
+</timeBasedFileNamingAndTriggeringPolicy>
+</rollingPolicy>
+<encoder>
+<charset>${logEncoding}</charset>
+<pattern>${logPattern}</pattern>
+</encoder>
+</appender>
+<logger name="org.springframework.web" level="DEBUG"/>
+	
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!-- Acepta caracteres latinos -->
+			<charset>UTF-8</charset>
+			dia/mes/año - 24H:minuto:segundo | Nivel | RutaClase.Clase:Linea 
+<!-- 				- Mensaje+SaltoLinea -->
+			<pattern>%d{dd/MM/yyyy - HH:mm:ss} | %-5level | [%c].%M:%line - %m%n
+			</pattern>
+		</encoder>
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<!-- Ruta y Nombre del archivo -->
+		<file>everis.log</file>
+		<encoder>
+			<!-- Acepta caracteres latinos -->
+			<charset>UTF-8</charset>
+			dia/mes/año - 24H:minuto:segundo | Nivel | RutaClase.Clase:Linea 
+<!-- 				- Mensaje+SaltoLinea -->
+			<pattern>%d{dd/MM/yyyy - HH:mm:ss} | %-5level | [%c].%M:%line - %m%n
+			</pattern>
+		</encoder>
+	</appender>
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+	<!-- Solo acepta info -->
+	<!-- <logger name="com.everis.project" additivity="false" level="info"> -->
+	<!-- Acepta todos -->
+	<logger name="com.everis.project" additivity="false">
+		<appender-ref ref="FILE" />
+	</logger>
+	
+</configuration>

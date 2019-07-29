@@ -7,9 +7,11 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Data;
+import lombok.Setter;
 
 //Use of lombok
 @Data
+@Setter
 @Entity
 @Table(name="subject")
 public class Subject {
@@ -26,7 +28,8 @@ public class Subject {
 //	Relations
 	
 	@OneToOne(mappedBy = "subjectreference",cascade = CascadeType.ALL  ,fetch = FetchType.LAZY)
-	@JsonIgnoreProperties("subjectreference")
+//	@JsonIgnoreProperties("subjectreference")
 	private Classes classesforsubject;
+
 	
 }

@@ -1,0 +1,61 @@
+package com.everis.project.service;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.everis.project.model.Classes;
+import com.everis.project.repository.ClassRepository;
+import com.everis.project.repository.StudentClassRepository;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class ClassServiceImpl implements ClassService {
+	
+//	private static Logger logger = LoggerFactory.getLogger(ClassServiceImpl.class); 
+	
+	@Autowired 
+	private ClassRepository classrepository;
+	
+	
+	private StudentClassRepository studentClassRepository;
+	
+	@Override
+	public List<Classes> findAll() {
+		return classrepository.findAll();
+	}
+
+	@Override
+	public Classes saveClasses(Classes classes) {
+		Classes room = classrepository.save(classes);
+		
+		classes.getStudentReference().forEach(studentclass -> studentclass.setClassesReference(classes));
+		
+		studentClassRepository.saveAll(classes.getStudentReference());
+		
+		
+		return room;
+	}
+
+	@Override
+	public Classes updateClasses(Classes classes) {
+		return classrepository.saveAndFlush(classes);
+	}
+
+	@Override
+	public Classes findByClassid(int classid) {
+		return classrepository.findById(classid).get();
+	}
+
+	@Override
+	public void deleteClasses(int classid) {
+		classrepository.deleteById(classid);
+	}
+
+	
+}

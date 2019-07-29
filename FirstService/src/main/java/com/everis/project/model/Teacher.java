@@ -5,9 +5,11 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.Data;
+import lombok.Setter;
 
 //Use of lombok
 @Data
+@Setter
 @Entity
 @Table(name="teacher")
 public class Teacher {

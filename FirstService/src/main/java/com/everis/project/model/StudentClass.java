@@ -1,8 +1,8 @@
 package com.everis.project.model;
 
-import java.util.Date;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -20,19 +20,25 @@ public class StudentClass {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentid;
 	
-	private String studentname;
+	@NotNull(message = "Enter first name")
+	@Size(min=1, max=10, message = "The first name must be greater than one character and less than or equal to 10 characters.")
+	@Column(name="firstname")
+	private String firstname;
 	
-	@Column(name="datefrom")
-	private Date datefrom;
+	@Size(min=1, max=10, message = "The middle name must be greater than one character and less than or equal to 10 characters.")
+	@Column(name="middlename")
+	private String middlename;
 	
-	@Column(name="dateto")
-	private Date dateto;
+	@NotNull(message = "Enter last name")
+	@Size(min=1, max=10, message = "The last name must be greater than one character and less than or equal to 10 characters.")
+	@Column(name="lastname")
+	private String lastname;
 	
 //	Relations
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("studentReference")
-	@JoinColumn(name= "studentReference")
-	private Classes classesReference;
+//	@ManyToOne(cascade = CascadeType.ALL)
+//	@JsonIgnoreProperties("studentReference")
+//	@JoinColumn(name= "studentReference")
+//	private Classes classesReference;
 	
 }

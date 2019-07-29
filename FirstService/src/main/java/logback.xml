@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- For assistance related to logback-translator or configuration -->
-<!-- files in general, please contact the logback user mailing list -->
-<!-- at http://www.qos.ch/mailman/listinfo/logback-user -->
-<!-- -->
-<!-- For professional support please see -->
-<!-- http://www.qos.ch/shop/products/professionalSupport -->
-<!-- -->
 <configuration scan="true" scanPeriod="30 seconds">
+
+<property name="contextName" value="log-everis"/>
+<property name="loggingDir" value="log"/>
+ 
 	<appender name="STDOUT"
 		class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<!-- Acepta caracteres latinos -->
+			<!-- Accept Latin characters -->
 			<charset>UTF-8</charset>
-			<!-- dia/mes/año - 24H:minuto:segundo | Nivel | RutaClase.Clase:Linea 
-				- Mensaje+SaltoLinea -->
+			dia/mes/año - 24H:minuto:segundo | Nivel | RutaClase.Clase:Linea 
+<!-- 				- Mensaje+SaltoLinea -->
 			<pattern>%d{dd/MM/yyyy - HH:mm:ss} | %-5level | [%c].%M:%line - %m%n
 			</pattern>
 		</encoder>
 	</appender>
-	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
-		<!-- Ruta y Nombre del archivo -->
-		<file>everis.log</file>
+	
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- Path and File Name -->
+		<file>${loggingDir}/${contextName}.log</file>		
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- Daily rollover -->
+            <fileNamePattern>${contextName}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+ 			 <!-- Each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+      		<maxFileSize>300MB</maxFileSize>    
+       		<maxHistory>30</maxHistory>
+       		<totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+		
 		<encoder>
-			<!-- Acepta caracteres latinos -->
+			<!-- Accept Latin characters -->
 			<charset>UTF-8</charset>
-			<!-- dia/mes/año - 24H:minuto:segundo | Nivel | RutaClase.Clase:Linea 
-				- Mensaje+SaltoLinea -->
+			dia/mes/año - 24H:minuto:segundo | Nivel | RutaClase.Clase:Linea 
+<!-- 				- Message+LineBreak -->
 			<pattern>%d{dd/MM/yyyy - HH:mm:ss} | %-5level | [%c].%M:%line - %m%n
 			</pattern>
 		</encoder>
 	</appender>
+    
 	<root level="debug">
 		<appender-ref ref="STDOUT" />
 	</root>
 	<!-- Solo acepta info -->
-	<!-- <logger name="pe.pecano.BillPecano" additivity="false" level="info"> -->
+	<!-- <logger name="com.everis.project" additivity="false" level="info"> -->
 	<!-- Acepta todos -->
 	<logger name="com.everis.project" additivity="false">
 		<appender-ref ref="FILE" />
 	</logger>
+	
 </configuration>

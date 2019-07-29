@@ -1,14 +1,16 @@
-27/07/2019 - 17:03:57 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 17:04:07 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 11.309 seconds (JVM running for 12.28)
-27/07/2019 - 17:05:29 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 17:05:39 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 10.981 seconds (JVM running for 12.046)
-27/07/2019 - 22:40:01 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 22:40:12 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 12.786 seconds (JVM running for 13.707)
-27/07/2019 - 22:42:09 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 22:42:15 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 7.636 seconds (JVM running for 13.399)
-27/07/2019 - 22:47:38 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 22:47:44 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 7.576 seconds (JVM running for 8.408)
-27/07/2019 - 22:48:14 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 22:48:16 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 3.234 seconds (JVM running for 40.252)
-27/07/2019 - 22:51:35 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
-27/07/2019 - 22:51:42 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 8.317 seconds (JVM running for 9.154)
+29/07/2019 - 03:18:34 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:18:37 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 2.999 seconds (JVM running for 1107.546)
+29/07/2019 - 03:19:19 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:19:22 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 3.22 seconds (JVM running for 1152.479)
+29/07/2019 - 03:26:04 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:26:06 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 2.917 seconds (JVM running for 1557.392)
+29/07/2019 - 03:27:58 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:28:02 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 3.7 seconds (JVM running for 1672.46)
+29/07/2019 - 03:28:20 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:28:23 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 2.931 seconds (JVM running for 1693.604)
+29/07/2019 - 03:28:46 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:28:49 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 2.84 seconds (JVM running for 1719.495)
+29/07/2019 - 03:30:13 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:30:16 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 3.059 seconds (JVM running for 1806.835)
+29/07/2019 - 03:30:21 | INFO  | [com.everis.project.FirstServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+29/07/2019 - 03:30:23 | INFO  | [com.everis.project.FirstServiceApplication].logStarted:59 - Started FirstServiceApplication in 2.811 seconds (JVM running for 1814.009)

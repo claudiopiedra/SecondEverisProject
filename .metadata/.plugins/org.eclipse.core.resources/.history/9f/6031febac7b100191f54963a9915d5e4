@@ -1,0 +1,29 @@
+package com.everis.project;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+import com.everis.project.service.ClassServiceImpl;
+
+//@Configuration
+//@EnableAutoConfiguration
+@EnableFeignClients
+@EnableCircuitBreaker
+@EnableDiscoveryClient
+@SpringBootApplication
+public class FirstServiceApplication {
+
+	private static Logger logger = LoggerFactory.getLogger(FirstServiceApplication.class); 
+	
+	public static void main(String[] args) {
+		SpringApplication.run(FirstServiceApplication.class, args);
+	}
+
+	
+	
+	
+}
