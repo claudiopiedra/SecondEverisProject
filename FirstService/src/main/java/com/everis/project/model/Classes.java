@@ -45,13 +45,13 @@ public class Classes {
 //	Relations
 	
 	
-//	@OneToMany(mappedBy = "classesReference", fetch = FetchType.LAZY)
-//	@JsonIgnoreProperties("classesReference")
-//	private List<StudentClass> studentReference;
+	@OneToMany(mappedBy = "classesReference", fetch = FetchType.LAZY)
+	@JsonIgnoreProperties("classesReference")
+	private List<StudentClass> studentReference;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-//	@JsonIgnoreProperties("classesforsubject")
-	@JoinColumn(name= "classesforsubject")
-	private Subject subjectreference;
+//	@OneToOne(cascade = CascadeType.ALL)
+////	@JsonIgnoreProperties("classesforsubject")
+//	@JoinColumn(name= "classesforsubject")
+//	private Subject subjectreference;
 	
 }

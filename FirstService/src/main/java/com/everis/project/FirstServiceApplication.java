@@ -10,10 +10,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 import com.everis.project.service.ClassServiceImpl;
 
-//@Configuration
-//@EnableAutoConfiguration
 //@EnableFeignClients
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 @EnableDiscoveryClient
 @SpringBootApplication
 public class FirstServiceApplication {

@@ -36,9 +36,9 @@ public class StudentClass {
 	
 //	Relations
 	
-//	@ManyToOne(cascade = CascadeType.ALL)
-//	@JsonIgnoreProperties("studentReference")
-//	@JoinColumn(name= "studentReference")
-//	private Classes classesReference;
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("studentReference")
+	@JoinColumn(name= "studentReference")
+	private Classes classesReference;
 	
 }

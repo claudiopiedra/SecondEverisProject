@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.everis.project.model.Classes;
 import com.everis.project.model.Teacher;
 import com.everis.project.service.TeacherService;
 
@@ -28,6 +29,11 @@ public class TeacherRestController {
 	@GetMapping("/get")
 	public List<Teacher> getTeacher(Model model){
 		return teacherService.findAll();	 
+	}
+	
+	@GetMapping("/getid/{teacherid}")
+	public Teacher findByTeacherid(@PathVariable("teacherid") Integer teacherid){
+		return teacherService.findByTeacherid(teacherid);
 	}
 	
 	@PostMapping("/post")

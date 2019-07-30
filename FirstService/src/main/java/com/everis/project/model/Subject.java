@@ -27,9 +27,9 @@ public class Subject {
 	
 //	Relations
 	
-	@OneToOne(mappedBy = "subjectreference",cascade = CascadeType.ALL  ,fetch = FetchType.LAZY)
-//	@JsonIgnoreProperties("subjectreference")
-	private Classes classesforsubject;
+//	@OneToOne(mappedBy = "subjectreference",cascade = CascadeType.ALL  ,fetch = FetchType.LAZY)
+////	@JsonIgnoreProperties("subjectreference")
+//	private Classes classesforsubject;
 
 	
 }

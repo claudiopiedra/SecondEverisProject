@@ -17,13 +17,13 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class ClassServiceImpl implements ClassService {
 	
-//	private static Logger logger = LoggerFactory.getLogger(ClassServiceImpl.class); 
+	private static Logger logger = LoggerFactory.getLogger(ClassServiceImpl.class); 
 	
 	@Autowired 
 	private ClassRepository classrepository;
 	
 	
-//	private StudentClassRepository studentClassRepository;
+	private StudentClassRepository studentClassRepository;
 	
 	@Override
 	public List<Classes> findAll() {
@@ -32,13 +32,13 @@ public class ClassServiceImpl implements ClassService {
 
 	@Override
 	public Classes saveClasses(Classes classes) {
-		return classrepository.save(classes);
-//		Classes room = classrepository.save(classes);
-//		
-//		classes.getStudentReference().forEach(studentclass -> studentclass.setClassesReference(classes));
-//		studentClassRepository.saveAll(classes.getStudentReference());
-//				
-//		return room;
+//		return classrepository.save(classes);
+		Classes room = classrepository.save(classes);
+		
+		classes.getStudentReference().forEach(studentclass -> studentclass.setClassesReference(classes));
+		studentClassRepository.saveAll(classes.getStudentReference());
+				
+		return room;
 	}
 
 	@Override

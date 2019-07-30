@@ -7,15 +7,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.everis.project.SecondServiceApplication;
+import com.everis.project.FirstServiceApplication;
 import com.everis.project.model.StudentClass;
 import com.everis.project.repository.StudentClassRepository;
 
 @Service
-public class StudentClassStudentClassImpl implements StudentClassService{
+public class StudentClassServiceImpl implements StudentClassService{
 
-	private static Logger logger = LoggerFactory.getLogger(SecondServiceApplication.class); 
+	private static Logger logger = LoggerFactory.getLogger(FirstServiceApplication.class); 
 
+	
 	@Autowired
 	private StudentClassRepository studentclassrepository;
 	

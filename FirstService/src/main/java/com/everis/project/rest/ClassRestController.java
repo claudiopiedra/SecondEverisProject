@@ -29,6 +29,12 @@ public class ClassRestController {
 		return classService.findAll();
 	}
 	
+	@GetMapping("/getid/{classid}")
+	public Classes findByClassid(@PathVariable("classid") Integer classid){
+		return classService.findByClassid(classid);
+	}
+	
+	
 	@PostMapping("/post")
 	public Classes insertClasses(@Valid @RequestBody Classes classes){
 		return classService.saveClasses(classes);

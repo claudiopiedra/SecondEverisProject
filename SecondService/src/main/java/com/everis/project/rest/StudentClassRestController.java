@@ -27,6 +27,11 @@ public class StudentClassRestController {
 		return studentClassService.findAll();
 	}
 	
+	@GetMapping("/getid/{studentid}")
+	public StudentClass findByStudentid(@PathVariable("studentid") Integer studentid){
+		return studentClassService.findByStudentid(studentid);
+	}
+	
 	@PostMapping(value="postStudent")
 	public StudentClass insertStudentClass(@RequestBody StudentClass studentclass){
 		return studentClassService.saveStudentClass(studentclass);
