@@ -2,6 +2,8 @@ package com.everis.project.rest;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,7 +35,7 @@ public class StudentClassRestController {
 	}
 	
 	@PostMapping(value="postStudent")
-	public StudentClass insertStudentClass(@RequestBody StudentClass studentclass){
+	public StudentClass insertStudentClass(@Valid @RequestBody StudentClass studentclass){
 		return studentClassService.saveStudentClass(studentclass);
 	}
 		

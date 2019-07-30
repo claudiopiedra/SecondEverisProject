@@ -21,7 +21,7 @@ public class Subject {
 	private int subjectid;
 	
 	@NotNull(message = "Enter subject name")
-	@Size(min=1, max=20, message = "The subject name must be greater than one character and less than or equal to 20 characters.")
+	@Size(min=1, max=30, message = "The subject name must be greater than one character and less than or equal to 30 characters.")
 	@Column(name="subjectname")
 	private String subjectname;	
 	
