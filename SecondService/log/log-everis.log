@@ -11,3 +11,5 @@
 30/07/2019 - 05:01:30 | INFO  | [com.everis.project.SecondServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
 30/07/2019 - 14:07:59 | INFO  | [com.everis.project.SecondServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
 30/07/2019 - 14:08:21 | INFO  | [com.everis.project.SecondServiceApplication].logStarted:59 - Started SecondServiceApplication in 26.68 seconds (JVM running for 29.095)
+30/07/2019 - 14:50:31 | INFO  | [com.everis.project.SecondServiceApplication].logStartupProfileInfo:646 - No active profile set, falling back to default profiles: default
+30/07/2019 - 14:50:48 | INFO  | [com.everis.project.SecondServiceApplication].logStarted:59 - Started SecondServiceApplication in 22.51 seconds (JVM running for 25.337)

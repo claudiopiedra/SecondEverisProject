@@ -112,5 +112,4 @@ public class ValidationTests {
 //		Set<ConstraintViolation<Classes>> constraintViolations = validate(classes);
 //        Assert.assertTrue("Your error message", constraintViolations.notNull == null);
 //	}
-
 }
